@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import './index.less';
 
 const FPS = 60;
 
