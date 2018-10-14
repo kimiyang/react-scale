@@ -228,13 +228,13 @@ class SlidingScale extends PureComponent {
     const amountNode = renderAmount && typeof renderAmount === "function" ? renderAmount(this.state.amount) : null;
     const indicatorNode = renderIndicator && typeof renderIndicator === "function" ? renderIndicator() : null;
     return (
-      <div className="sliding-scale"
+      <div
         onTouchStart = {this.onTouchStart}
         onTouchMove = {this.onTouchMove}
         onTouchEnd = {this.onTouchEnd}
       >
         {
-          amountNode || <div className='amount'>{this.state.amount}</div>
+          amountNode || <div>{this.state.amount}</div>
         }
         {
           indicatorNode
